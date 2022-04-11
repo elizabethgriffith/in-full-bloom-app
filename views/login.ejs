@@ -1,40 +1,66 @@
-<%- include('partials/header') -%>
-
-<main class="container">
-  <div class="row justify-content-center">
-    <section class="col-6 mt-5">
-      <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
-      <div class="alert alert-danger"><%= el.msg %></div>
-      <% }) %> <% } %> <% if (locals.messages.info) { %> <%
-      messages.info.forEach( el => { %>
-      <div class="alert alert-info"><%= el.msg %></div>
-      <% }) %> <% } %>
-      <form action="/login" method="POST">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            >Email address</label
-          >
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            name="email"
-          />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>In Full Bloom</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/imgs/flower.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section id="mainPage" class="row justify-content-around mt-5">
+      <main class="container">
+        <div class="row justify-content-center">
+          <section class="col-6 mt-5">
+            <% if (locals.messages.errors) { %> <% messages.errors.forEach( el => { %>
+            <div class="alert alert-danger"><%= el.msg %></div>
+            <% }) %> <% } %> <% if (locals.messages.info) { %> <%
+            messages.info.forEach( el => { %>
+            <div class="alert alert-info"><%= el.msg %></div>
+            <% }) %> <% } %>
+            <form action="/login" method="POST" class="formWidth">
+              <section class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <section class="mb-3">
+                  <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  name="email"
+                  />
+                </section>
+              </section>
+              <section class="mb-3 pass">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <section>
+                  <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  name="password"
+                  />
+                </section>
+              </section>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </section>
         </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            name="password"
-          />
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-    </section>
-  </div>
-</main>
+      </main>
+    </section> 
+  </body>
+</html>
 
-<%- include('partials/footer') -%>

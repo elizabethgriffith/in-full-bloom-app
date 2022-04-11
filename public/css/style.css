@@ -26,3 +26,10 @@ html {
     font-size: 30px;
 }
 
+.pass {
+    padding-top: 15px;
+}
+
+#exampleInputEmail1, #exampleInputPassword1 {
+    width: 30%;
+}
