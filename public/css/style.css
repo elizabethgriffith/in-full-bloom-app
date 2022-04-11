@@ -1,0 +1,28 @@
+html { 
+    background: url(imgs/bg1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#mainPage {
+    background-color: rgba(211, 242, 247, 0.9);
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 10%;
+    padding: 2% 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+#mainPage h1 {
+    font-size: 50px;
+}
+
+#mainPage h2 {
+    font-size: 30px;
+}
+
