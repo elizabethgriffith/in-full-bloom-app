@@ -1,5 +1,5 @@
 html { 
-    background: url(imgs/bg1.jpg) no-repeat center center fixed; 
+    background: url(imgs/bg3.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,7 +7,7 @@ html {
 }
 
 #mainPage {
-    background-color: rgba(211, 242, 247, 0.9);
+    background-color: rgba(167, 197, 181, 0.9);
     color: white;
     text-align: center;
     margin: auto;
