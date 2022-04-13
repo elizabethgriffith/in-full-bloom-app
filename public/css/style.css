@@ -34,7 +34,25 @@ html {
     width: 30%;
 }
 
-#emailHelp {
+#emailHelp, #logout{
     font-size: 12px;
     color: grey;
+}
+
+#mainPage .leftJust, p > a #logout {
+    text-align: left;
+    margin: 0 0 0 2%;
+}
+#logout {
+    display: block;
+    padding-bottom: 2%;
+}
+
+.list-unstyled {
+    list-style-type: none;
+}
+
+#return {
+    color: white;
+    text-decoration: none;
 }
