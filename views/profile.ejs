@@ -27,13 +27,13 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body id="profile">
-    <section id="profileSection">
+    <section id="profileSection" class="profile">
     <div class="container">
       <div class="row mt-5" id="centerOverride">
           <div class="col-6">
               <div>
-                  <p class="leftJust"><%= user.userName %></p>
-                  <a href="/logout" class="col-3 btn btn-primary leftJust" id="logout">Logout</a>
+                  <p class="leftJust"><%= user.userName %> <a href="/logout" class="col-3 leftJust" id="logout"><button type="submit" class="buttonDesign">Logout</button></a></p>
+                  
               </div>
               <div class="col-6">
                 <p class="leftJust">Your Posts</p>
@@ -47,7 +47,7 @@
                 <% } %>
                 </ul>
                 <div class="row justify-content-center mt-5">
-                  <a class="btn btn-primary" id="return" href="/feed"><button type="submit">Return to Feed</button></a>
+                  <a id="return" href="/feed"><button type="submit">Return to Feed</button></a>
                 </div>  
               </div>  
 
