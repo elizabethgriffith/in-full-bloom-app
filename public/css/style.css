@@ -114,3 +114,18 @@ ul.row.list-unstyled {
 .spaceBelow {
     margin-bottom: 1rem;
 }
+
+#postSection {
+    background-color: rgba(167, 197, 181, 0.9);
+    color: white;
+    margin: auto;
+    width: 75%;
+    margin-top: 10%;
+    padding: 1% 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+}
+
+.caption {
+    font-family: 'Roboto Condensed', sans-serif;
+}
