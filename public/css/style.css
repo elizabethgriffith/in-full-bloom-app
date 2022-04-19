@@ -110,3 +110,7 @@ ul.row.list-unstyled {
     /* text-align:center; */
     /* position:relative; */
 }
+
+.spaceBelow {
+    margin-bottom: 1rem;
+}
