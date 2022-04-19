@@ -100,7 +100,7 @@ ul.row.list-unstyled {
     /* padding:0.7em 1.4em; */
     margin:0 0.3em 0.3em 0;
     border-radius:0.25em;
-    font-size: 12px;
+    font-size: 18px;
     /* box-sizing: border-box; */
     /* text-decoration:none; */
     /* font-weight:400; */
@@ -128,4 +128,8 @@ ul.row.list-unstyled {
 
 .caption {
     font-family: 'Roboto Condensed', sans-serif;
+}
+
+#returnButton {
+    margin-left: 1%;
 }
